@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form{
+  width: 100%;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  align-items: center;
+  border: black solid 1px;
+  
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo >img{
+  position: relative;
+  top:20%;
+  left:20%;
+  width: 30px;
+}
+.logo>h1{
+  text-align: center;
+  font-size: 20px;
+}
+.logo>p{
+  font-size: 14px;
+  margin: 10px 0px 20px 0px;
+  color: #818181;
+}
+
+.loginFields{
+  display:flex;
+  flex-direction: row;
+  margin: 20px 0px;
+
+}
+.loginFields >img{
+  width: 25px;
+  height: 25px;
+  margin: 20px 85px;
+  
+}
+.back{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+ padding-right: 15px;
+}
+.back>img{
+  width: 35px;
+}
+.button-box{
+  display:flex;
+  flex-direction: row;
+  margin: 14px 95px;
+  position: relative;
+  
+}
+.btn{
+  justify-content: space-between;
+  margin: 0px 20px;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+#bttn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  background: #F5A302;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+  
+
+.formGroup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  }
+
+.formItem >input{
+  border-radius: 10px;
+  margin: 12px auto;
+  width: 340px;
+  height: 40px;
+  background-color: #F0F0F0;
+  color: #818181;
+  border: none;
+  font-size: 15px;
+  outline:none;
+}
+
+.icon1{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 22px 0 0 10px;
+}
+.icon2{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 22px 0 0 10px;
+}
+.name{
+  padding-left: 35px;
+}
+.forgotPass{
+  display: flex;
+  justify-content: end;
+    color: #818181;
+    text-decoration: none;
+ 
+  cursor: pointer;
+  font-size: 14px;
+ 
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  
+}
+.loginBtn{
+  cursor: pointer;
+  width: 370PX;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color:#F5A302;
+  
+  
+}
+.loginBtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+  
+  
+
+.connect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.connect>p{
+  font-size: 14px;
+  color: #818181;
+}
+.sclm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:20px auto;
+  
+}
+.bac{
+  margin: auto 10px;
+  justify-content: space-between;
+  
+
+  cursor: pointer;
+}
+.bac>img{
+  
+  width: 35px;
 }
